@@ -61,8 +61,7 @@ body {
 
 #main{
     display: flex;
-    flex-direction: column;
-    background-color: blue;
+    flex-direction: column;    
 }
 
 .statusBar{
@@ -89,4 +88,21 @@ body {
     display: flex;
     width: 316px;
     justify-content: space-between;
+}
+
+.headline{
+    display: flex;
+    height: 590px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1c1A19 url("img/introBkg.svg") no-repeat;
+    background-position: 100% 100%;
+}
+
+.headlineContent{
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    gap: 12px;
 }
