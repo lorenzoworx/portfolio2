@@ -95,10 +95,10 @@ body {
   gap: 12px;
 }
 
-.socialIcons>ul{
-    list-style: none;
+.socialIcons > ul {
+  list-style: none;
 }
 
-.socialIcons>ul>li{
-    display: inline;
+.socialIcons > ul > li {
+  display: inline;
 }
