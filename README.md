@@ -107,7 +107,6 @@ Clone this repository to your desired folder:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- Projects Section
 - Contact Form
 - Desktop View
 
