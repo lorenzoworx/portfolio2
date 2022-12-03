@@ -257,4 +257,19 @@ body {
 .pt44 { padding-top: 44px; }
 .pb44 { padding-bottom: 44px;}
 
+button { background-color: #fff;}
 
+button:hover {
+  background-color: #FFF5E1;
+  border: 1px solid #F55800;
+  color: #F55800;
+}
+
+button:active {
+  background-color: #E05304;
+  color: #F4F1F0;
+}
+ button:disabled {
+   background-color: #F4F1F0;
+   color: #5B5957;
+ }
