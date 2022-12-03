@@ -141,6 +141,7 @@ body {
 .grid2 > h1 { padding-top: 12px; }
 .grid2 > P { padding-bottom: 12px; }
 .grid2 > button { margin-top: 3px; }
+.grid2 > .techList > li { margin-right: 12px; }
 
 
 .grid3 { grid-row: 4/5; }
@@ -211,6 +212,49 @@ body {
   padding-right: 16px;
 }
 
-#about {
-  height: 1901px;
+#about {  
+  padding-top: 120px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("img/aboutMeBkg.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20.5%;
 }
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 209px;
+}
+
+.aboutMe > button {
+  width: 161px;
+  height: 48px;
+  padding: 12px;
+}
+
+.skills {
+  margin-top: 136px;
+  padding-left: 74px;
+  padding-right: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.skills > li > ul > li {
+  text-align: center;
+  list-style: none;
+  padding-bottom: 32px;
+}
+
+.languages { list-style-image: url('img/languageList.svg'); }
+.frameworks { list-style-image: url('img/frameworksList.svg');}
+.skils { list-style-image: url('img/skillsList.svg'); }
+.pt44 { padding-top: 44px; }
+.pb44 { padding-bottom: 44px;}
+
+
