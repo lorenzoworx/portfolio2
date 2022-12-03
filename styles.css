@@ -83,7 +83,7 @@ body {
   justify-content: space-between;
 }
 
-.headline {
+#headline {
   display: flex;
   height: 590px;
   flex-direction: column;
@@ -108,7 +108,7 @@ body {
   display: inline;
 }
 
-.works {
+#works {
   display: flex;
   justify-content: center;
   height: 3455px;
@@ -118,17 +118,37 @@ body {
 .worksGrid {
   width: 327px;
   display: grid;
-  grid-template-rows: 107px 568px repeat(6, 386px);
+  grid-template-rows: 107px 32px 568px repeat(6, 386px);
+  row-gap: 24px;
 }
 
-.grid1 { grid-row: 1/2; }
-.grid2 { grid-row: 2/3; }
-.grid3 { grid-row: 3/4; }
-.grid4 { grid-row: 4/5; }
-.grid5 { grid-row: 5/6; }
-.grid6 { grid-row: 6/7; }
-.grid7 { grid-row: 7/8; }
-.grid8 { grid-row: 8/9; }
+.grid1 { 
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;  
+}
+
+.grid1 > h1 { text-align: center; }
+
+.grid2 {
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.grid2 > h1 { padding-top: 12px; }
+.grid2 > P { padding-bottom: 12px; }
+.grid2 > button { margin-top: 3px; }
+
+
+.grid3 { grid-row: 4/5; }
+.grid4 { grid-row: 5/6; }
+.grid5 { grid-row: 6/7; }
+.grid6 { grid-row: 7/8; }
+.grid7 { grid-row: 8/9; }
+.grid8 { grid-row: 9/10; }
 
 .techList {
   text-decoration: none;
@@ -161,6 +181,10 @@ body {
   background-image: url("img/projectImg2.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 84px;
+  gap: 12px;
 }
 
 .project2Tag {
@@ -179,4 +203,14 @@ body {
   width: 327px;
   height: 48px;
   padding: 12px 113.5px;
+  margin-top: 14px;
+}
+
+.p16{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#about {
+  height: 1901px;
 }
