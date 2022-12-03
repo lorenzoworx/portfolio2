@@ -122,11 +122,11 @@ body {
   row-gap: 24px;
 }
 
-.grid1 { 
+.grid1 {
   grid-row: 1/2;
   display: flex;
   flex-direction: column;
-  gap: 24px;  
+  gap: 24px;
 }
 
 .grid1 > h1 { text-align: center; }
@@ -139,10 +139,15 @@ body {
 }
 
 .grid2 > h1 { padding-top: 12px; }
-.grid2 > P { padding-bottom: 12px; }
+.grid2 > p { padding-bottom: 12px; }
 .grid2 > button { margin-top: 3px; }
-.grid2 > .techList > li { margin-right: 12px; }
 
+.skills > li > ul > li {
+  text-align: center;
+  list-style: none;
+  padding-bottom: 32px;
+}
+.grid2 > .techList > li { margin-right: 12px; }
 
 .grid3 { grid-row: 4/5; }
 .grid4 { grid-row: 5/6; }
@@ -158,9 +163,9 @@ body {
 
 .project1Tag {
   display: inline;
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
   height: 40px;
-  padding: 10PX 12PX;
+  padding: 10px 12px;
 }
 
 .project1Tag > span {
@@ -190,9 +195,9 @@ body {
 
 .project2Tag {
   display: inline;
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
   height: 40px;
-  padding: 10PX 12PX;
+  padding: 10px 12px;
   background: rgba(255, 255, 255, 0.24);
 }
 
@@ -207,12 +212,12 @@ body {
   margin-top: 14px;
 }
 
-.p16{
+.p16 {
   padding-left: 16px;
   padding-right: 16px;
 }
 
-#about {  
+#about {
   padding-top: 120px;
   padding-left: 24px;
   padding-right: 24px;
@@ -244,32 +249,25 @@ body {
   flex-direction: column;
   align-items: center;
 }
- 
-.skills > li > ul > li {
-  text-align: center;
-  list-style: none;
-  padding-bottom: 32px;
-}
 
 .languages { list-style-image: url('img/languageList.svg'); }
-.frameworks { list-style-image: url('img/frameworksList.svg');}
+.frameworks { list-style-image: url('img/frameworksList.svg'); }
 .skils { list-style-image: url('img/skillsList.svg'); }
 .pt44 { padding-top: 44px; }
-.pb44 { padding-bottom: 44px;}
-
-button { background-color: #fff;}
+.pb44 { padding-bottom: 44px; }
 
 button:hover {
-  background-color: #FFF5E1;
-  border: 1px solid #F55800;
-  color: #F55800;
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 button:active {
-  background-color: #E05304;
-  color: #F4F1F0;
+  background-color: #e05304;
+  color: #f4f1f0;
 }
- button:disabled {
-   background-color: #F4F1F0;
-   color: #5B5957;
- }
+
+button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
