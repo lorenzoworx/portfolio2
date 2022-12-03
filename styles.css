@@ -60,6 +60,11 @@ body {
 .ls048 { letter-spacing: 0.03rem; }
 .ls037 { letter-spacing: 0.37px; }
 
+.width49 { width: 49px; }
+.width56 { width: 56px; }
+.width95 { width: 95px; }
+.width61 { width: 61px; }
+
 #main {
   display: flex;
   flex-direction: column;
@@ -78,7 +83,7 @@ body {
   justify-content: space-between;
 }
 
-.headline {
+#headline {
   display: flex;
   height: 590px;
   flex-direction: column;
@@ -101,4 +106,168 @@ body {
 
 .socialIcons > ul > li {
   display: inline;
+}
+
+#works {
+  display: flex;
+  justify-content: center;
+  height: 3455px;
+  padding-top: 120px;
+}
+
+.worksGrid {
+  width: 327px;
+  display: grid;
+  grid-template-rows: 107px 32px 568px repeat(6, 386px);
+  row-gap: 24px;
+}
+
+.grid1 {
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.grid1 > h1 { text-align: center; }
+
+.grid2 {
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.grid2 > h1 { padding-top: 12px; }
+.grid2 > p { padding-bottom: 12px; }
+.grid2 > button { margin-top: 3px; }
+
+.skills > li > ul > li {
+  text-align: center;
+  list-style: none;
+  padding-bottom: 32px;
+}
+.grid2 > .techList > li { margin-right: 12px; }
+
+.grid3 { grid-row: 4/5; }
+.grid4 { grid-row: 5/6; }
+.grid5 { grid-row: 6/7; }
+.grid6 { grid-row: 7/8; }
+.grid7 { grid-row: 8/9; }
+.grid8 { grid-row: 9/10; }
+
+.techList {
+  text-decoration: none;
+  list-style: none;
+}
+
+.project1Tag {
+  display: inline;
+  border: 1px solid #8993a4;
+  height: 40px;
+  padding: 10px 12px;
+}
+
+.project1Tag > span {
+  text-align: center;
+}
+
+.css { width: 49px; }
+.html { width: 56px; }
+.boot { width: 95px; }
+.ruby { width: 61px; }
+
+.project1Button {
+  width: 124px;
+  height: 48px;
+  padding: 12px;
+}
+
+.project2 {
+  background-image: url("img/projectImg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 84px;
+  gap: 12px;
+}
+
+.project2Tag {
+  display: inline;
+  border: 1px solid #8993a4;
+  height: 40px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.project2Tag > span {
+  text-align: center;
+}
+
+.project2Button {
+  width: 327px;
+  height: 48px;
+  padding: 12px 113.5px;
+  margin-top: 14px;
+}
+
+.p16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#about {
+  padding-top: 120px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("img/aboutMeBkg.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20.5%;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 209px;
+}
+
+.aboutMe > button {
+  width: 161px;
+  height: 48px;
+  padding: 12px;
+}
+
+.skills {
+  margin-top: 136px;
+  padding-left: 74px;
+  padding-right: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.languages { list-style-image: url('img/languageList.svg'); }
+.frameworks { list-style-image: url('img/frameworksList.svg'); }
+.skils { list-style-image: url('img/skillsList.svg'); }
+.pt44 { padding-top: 44px; }
+.pb44 { padding-bottom: 44px; }
+
+button:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
