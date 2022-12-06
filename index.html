@@ -165,7 +165,49 @@
                 </li>
             </ul>
         </section>
-        
+        <section id="contact">
+            <p>I'm always interested in hearing about new projects, so if you'd 
+               like to chat please get in touch.
+            </p>
+            <form action="https://formspree.io/f/xlevqbpl" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="user_name" maxlength="30" required />
+                    </li>
+                    <li>
+                        <label for="mail">Email address</label>
+                        <input type="email" id="mail" name="user_email" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" maxlength="30" required/>
+                    </li>
+                    <li>                        
+                        <textarea id="message" name="user_message" placeholder="Enter text here" cols="30" rows="10" maxlength="500" required></textarea>
+                    </li>
+                    <li>
+                        <button type="submit">Get in touch</button>
+                    </li>                    
+                </ul>
+                <hr>
+                <div class="socialIcons">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="img/gitHub.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/linkedin.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/angellist.png" alt=""></a>                            
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/twitter.png" alt=""></a>                            
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/medium.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </section>
     </section>
 </body>
 </html>
