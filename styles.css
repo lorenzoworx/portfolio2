@@ -106,6 +106,8 @@ button { border: 1px solid; }
   list-style: none;
 }
 
+footer > div > ul > li { margin-right: 21px; }
+
 .socialIcons > ul > li {
   display: inline;
 }
@@ -277,8 +279,9 @@ button:disabled {
 #contact {
   display: flex;
   flex-direction: column;
-  padding:120px 24px 124px 24px;
+  padding: 120px 24px 124px 24px;
 }
+
 #contact > p {
   text-align: center;
 }
@@ -297,8 +300,8 @@ button:disabled {
 }
 
 #contact > form > ul > li > input {
-  border: 0px;
-  border-bottom: 2px #DBD8D7 solid ;  
+  border: 0;
+  border-bottom: 2px #dbd8d7 solid;
 }
 
 #contact > form > ul > li > label {
@@ -308,7 +311,7 @@ button:disabled {
 
 .formName { padding-bottom: 39px; }
 .formEmail { padding-bottom: 24px; }
-.formMsg { background-color: #FBF8F7; } 
+.formMsg { background-color: #fbf8f7; }
 
 #contact > form > ul > li > button {
   margin-top: 24px;
@@ -324,5 +327,3 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
-footer > div > ul > li { margin-right: 21px;}
