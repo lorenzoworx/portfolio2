@@ -271,3 +271,8 @@ button:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
 }
+
+section#contact{
+  display: flex;
+  flex-direction: column;
+}
