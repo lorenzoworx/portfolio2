@@ -276,3 +276,9 @@ section#contact{
   display: flex;
   flex-direction: column;
 }
+section#contact p{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+}
