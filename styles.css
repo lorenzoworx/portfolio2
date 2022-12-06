@@ -15,6 +15,8 @@ body {
   font-size: 1.6rem;
 }
 
+button { border: 1px solid; }
+
 .roboto { font-family: 'Roboto', sans-serif; }
 .crete { font-family: 'Crete Round', serif; }
 .poppins { font-family: 'Poppins', sans-serif; }
@@ -272,13 +274,55 @@ button:disabled {
   color: #5b5957;
 }
 
-section#contact{
+#contact {
+  display: flex;
+  flex-direction: column;
+  padding:120px 24px 124px 24px;
+}
+#contact > p {
+  text-align: center;
+}
+
+#contact > form {
+  padding-top: 58px;
+}
+
+#contact > form > ul {
+  list-style: none;
+}
+
+#contact > form > ul > li {
   display: flex;
   flex-direction: column;
 }
-section#contact p{
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 44px;
-  text-align: center;
+
+#contact > form > ul > li > input {
+  border: 0px;
+  border-bottom: 2px #DBD8D7 solid ;  
 }
+
+#contact > form > ul > li > label {
+  color: #979493;
+  padding-bottom: 14px;
+}
+
+.formName { padding-bottom: 39px; }
+.formEmail { padding-bottom: 24px; }
+.formMsg { background-color: #FBF8F7; } 
+
+#contact > form > ul > li > button {
+  margin-top: 24px;
+  width: 131px;
+  height: 48px;
+  align-self: center;
+  padding: 12px;
+}
+
+footer {
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > div > ul > li { margin-right: 21px;}
