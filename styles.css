@@ -288,32 +288,24 @@ button:disabled {
 
 #contact > form {
   padding-top: 58px;
-}
-
-#contact > form > ul {
-  list-style: none;
-}
-
-#contact > form > ul > li {
   display: flex;
   flex-direction: column;
 }
 
-#contact > form > ul > li > input {
+#contact > form > input {
   border: 0;
   border-bottom: 2px #dbd8d7 solid;
 }
 
-#contact > form > ul > li > label {
-  color: #979493;
-  padding-bottom: 14px;
+.formName { margin-bottom: 39px; }
+.formEmail { margin-bottom: 24px; }
+
+.formMsg {
+  background-color: #fbf8f7;
+  margin-top: 24px;
 }
 
-.formName { padding-bottom: 39px; }
-.formEmail { padding-bottom: 24px; }
-.formMsg { background-color: #fbf8f7; }
-
-#contact > form > ul > li > button {
+#contact > form > button {
   margin-top: 24px;
   width: 131px;
   height: 48px;
@@ -326,4 +318,28 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pholders ::placeholder {
+  vertical-align: middle;
+  text-indent: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #979493;
+}
+
+.msgpholders ::placeholder {
+  vertical-align: middle;
+  text-indent: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #3c3a39;
+}
+
+.footerHr {
+  color: #dfe1e6;
 }
