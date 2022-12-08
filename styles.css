@@ -142,16 +142,16 @@ footer > div > ul > li { margin-right: 21px; }
   gap: 12px;
 }
 
-.grid2 > h1 { padding-top: 12px; }
-.grid2 > p { padding-bottom: 12px; }
-.grid2 > button { margin-top: 3px; }
+.grid2 > div > h1 { padding-top: 12px; }
+.grid2 > div > p { padding-bottom: 12px; }
+.grid2 > div > button { margin-top: 15px; }
 
 .skills > li > ul > li {
   text-align: center;
   list-style: none;
   padding-bottom: 32px;
 }
-.grid2 > .techList > li { margin-right: 12px; }
+.grid2 > div > .techList > li { margin-right: 12px; }
 
 .grid3 { grid-row: 4/5; }
 .grid4 { grid-row: 5/6; }
@@ -391,4 +391,57 @@ footer {
     flex-direction: column;
     gap: 20px;
   }
+
+  #works {
+    display: flex;
+    padding: 135px 9.9vw 130px 9.7vw;
+    height: auto;
+  }
+
+  .worksGrid {
+    width: 78.6vw;
+    display: grid;
+    grid-template-rows: 52px 114px 448px 24px 435px 37px 435px;
+    grid-template-columns: 25.6vw 1.6vw 25.6vw 1.6vw 25.6vw;
+    row-gap: 0;
+    
+  }
+
+  .grid1 {
+    grid-row: 1/2;
+    grid-column: 1/8;
+    flex-direction: row;    
+  }
+
+  .grid2 {
+    grid-row: 3/4;
+    grid-column: 1/8;
+    flex-direction: row;
+  }
+
+  .grid3 { 
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+  .grid4 { 
+    grid-row: 5/6;
+    grid-column: 3/4;
+  }
+  .grid5 { 
+    grid-row: 5/6;
+    grid-column: 5/6;
+  }
+  .grid6 { 
+    grid-row: 7/8;
+    grid-column: 1/2;
+  }
+  .grid7 { 
+    grid-row: 7/8;
+    grid-column: 3/4;
+  }
+  .grid8 { 
+    grid-row: 7/8;
+    grid-column: 5/6;
+  }
+  
 }
