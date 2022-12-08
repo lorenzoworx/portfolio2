@@ -358,3 +358,11 @@ a.logo{
       transform: rotate(359deg);
     }
   }  
+
+  .socialIcons ul li a img{
+    transition: all 1s;
+  }
+
+  .socialIcons ul li a img:hover{
+    transform: scale(1.5);
+  }
