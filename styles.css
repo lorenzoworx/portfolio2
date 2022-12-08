@@ -343,3 +343,18 @@ footer {
 .footerHr {
   color: #dfe1e6;
 }
+
+
+a.logo{
+    animation: rotation 2s 1;
+  
+}
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }  
