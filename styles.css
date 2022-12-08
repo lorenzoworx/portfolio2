@@ -343,3 +343,52 @@ footer {
 .footerHr {
   color: #dfe1e6;
 }
+
+@media screen and (min-width: 421px) {
+  #headline {
+    display: flex;
+    height: 798px;
+    flex-direction: column;
+    padding-top: 192px;
+    padding-bottom: 251px;
+    padding-left: 2.5vw;
+    background: #1c1a19 url("img/desktopIntroBkg.png") no-repeat;
+    background-position: 100% 0;
+  }
+
+  .headlineContent {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 39.3vw;
+    gap: 6vw;
+  }
+
+  .introText {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;    
+  }
+
+  .introText > h1 {
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .introText > .lh32 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .introText > .lh24 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .socialIcons > ul{ 
+    padding-top: 87px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
