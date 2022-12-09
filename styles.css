@@ -85,6 +85,8 @@ button { border: 1px solid; }
   justify-content: space-between;
 }
 
+.deskNav { display: none;}
+
 #headline {
   display: flex;
   height: 590px;
@@ -282,17 +284,17 @@ button:disabled {
   padding: 120px 24px 124px 24px;
 }
 
-#contact > p {
+#contact > div > p {
   text-align: center;
 }
 
-#contact > form {
+#contact > div > form {
   padding-top: 58px;
   display: flex;
   flex-direction: column;
 }
 
-#contact > form > input {
+#contact > div > form > input {
   border: 0;
   border-bottom: 2px #dbd8d7 solid;
 }
@@ -305,7 +307,7 @@ button:disabled {
   margin-top: 24px;
 }
 
-#contact > form > button {
+#contact > button {
   margin-top: 24px;
   width: 131px;
   height: 48px;
@@ -344,7 +346,7 @@ footer {
   color: #dfe1e6;
 }
 
-@media screen and (min-width: 421px) {
+@media screen and (min-width: 768px) {
   #headline {
     display: flex;
     height: 798px;
@@ -413,6 +415,11 @@ footer {
     flex-direction: row;    
   }
 
+  .grid1 > hr {
+    transform: rotate(90deg);
+
+  }
+
   .grid2 {
     grid-row: 3/4;
     grid-column: 1/8;
@@ -443,5 +450,61 @@ footer {
     grid-row: 7/8;
     grid-column: 5/6;
   }
+
+  #about {
+    background-image: url("img/deskAbout.png");
+    background-repeat: no-repeat;
+    background-position: 100% 8.3%;
+  }
+
+  .skills{
+    flex-direction: row;
+  }
+
+  #contact > div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer > .socialIcons > ul{
+    flex-direction: row;
+    padding-top: 15px;
+    padding-bottom: 16px;
+  }
   
+  .deskNav {
+    display: flex;
+  }
+
+  .deskNav > ul {
+    list-style: none;
+    display: flex;
+    gap: 2.2vw;
+    align-items: center;
+    padding-top: 5px;
+  }
+
+  .deskNav > ul > li {
+    display: inline;
+  }
+  
+  .deskNav > ul > li > a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .navigation {height: 72px;}
+
+  .navigationContent { width: 80.2vw; }
+
+  .navigationContent > a {
+    padding: 10px 0.8vw;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  nav > img { display: none;}
 }

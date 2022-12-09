@@ -16,6 +16,15 @@
                 <a class="roboto white w700 s18 lh24">John Doe</a>
                 <nav>
                     <img src="img/Union.png" alt="">
+                    <div class="deskNav">
+                        <ul>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#"><img src="img/mailIcon.svg" alt=""></a></li>
+
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -171,15 +180,17 @@
             </ul>
         </section>
         <section id="contact">
-            <p class="inter nBlue2 s32 w700 lh44">I'm always<br>interested in hearing<br>about new projects,<br>so if you'd 
-               like to<br>chat please get in touch.
-            </p>
-            <form action="https://formspree.io/f/xlevqbpl" method="post">
-                <input type="text" id="name" name="user_name" class="formName pholders" maxlength="30" required placeholder="Full name" />
-                <input type="email" id="mail" name="user_email" class="formEmail pholders" placeholder="Email address" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" maxlength="30" required/>                  
-                <textarea id="message" name="user_message" class="formMsg msgpholders" placeholder="Enter text here" cols="30" rows="10" maxlength="500" required></textarea>
-                <button type="submit" class="bcOrange inter s17 w700 lh24 ls048 white">Get in touch</button>
-            </form>                
+            <div>
+                <p class="inter nBlue2 s32 w700 lh44">I'm always<br>interested in hearing<br>about new projects,<br>so if you'd 
+                   like to<br>chat please get in touch.
+                </p>
+                <form action="https://formspree.io/f/xlevqbpl" method="post">
+                    <input type="text" id="name" name="user_name" class="formName pholders" maxlength="30" required placeholder="Full name" />
+                    <input type="email" id="mail" name="user_email" class="formEmail pholders" placeholder="Email address" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" maxlength="30" required/>                  
+                    <textarea id="message" name="user_message" class="formMsg msgpholders" placeholder="Enter text here" cols="30" rows="10" maxlength="500" required></textarea>
+                </form>                
+            </div>
+            <button type="submit" class="bcOrange inter s17 w700 lh24 ls048 white">Get in touch</button>
         </section>
         <hr class="footerHr">
         <footer>
