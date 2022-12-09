@@ -346,6 +346,12 @@ footer {
   color: #dfe1e6;
 }
 
+@media screen and (max-width: 767px){
+  .noMobile { display: none;}
+
+}
+
+
 @media screen and (min-width: 768px) {
   #headline {
     display: flex;
@@ -415,8 +421,8 @@ footer {
     flex-direction: row;    
   }
 
-  .grid1 > hr {
-    transform: rotate(90deg);
+  .grid1 > h1 {
+    margin-right: 24px;
 
   }
 
@@ -426,30 +432,87 @@ footer {
     flex-direction: row;
   }
 
+  .grid2 > div > h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .grid2 > div > p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
   .grid3 { 
     grid-row: 5/6;
     grid-column: 1/2;
+    background-image: url("img/deskGrid3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: end;
   }
+
+  .grid3 > h1 { display: none; }
+  .grid3 > p { display: none; }
+  .grid3 > ul { display: none; }
+  .grid3 > button { width: 25.6vw; }
+
+  .project2 { gap: 0;}
   .grid4 { 
     grid-row: 5/6;
     grid-column: 3/4;
+    background-image: url("img/deskGrid4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 24px;
+    padding-top: 156px;    
   }
+  .grid4 > button { display: none; }
+
+
   .grid5 { 
     grid-row: 5/6;
     grid-column: 5/6;
+    background-image: url("img/deskGrid5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 24px;
+    padding-top: 200px;
   }
+  .grid5 > button { display: none; }
+
   .grid6 { 
     grid-row: 7/8;
     grid-column: 1/2;
+    gap: 24px;
+    padding-top: 156px;
+    background-image: url("img/deskGrid6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
+  .grid6 > button { display: none; }
+
   .grid7 { 
     grid-row: 7/8;
     grid-column: 3/4;
+    background-image: url("img/deskGrid4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 24px;
+    padding-top: 156px;  
   }
+  .grid7 > button { display: none; }
+
   .grid8 { 
     grid-row: 7/8;
     grid-column: 5/6;
+    background-image: url("img/deskGrid5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 24px;
+    padding-top: 200px;
   }
+  .grid8 > button { display: none; }
+
 
   #about {
     background-image: url("img/deskAbout.png");
@@ -457,8 +520,17 @@ footer {
     background-position: 100% 8.3%;
   }
 
+  .aboutMe { width: 39.3vw; }
+  .aboutMe > h1 { line-height: 81.5px; }
+  .aboutMe > p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
   .skills{
     flex-direction: row;
+    gap: 10.5vw;
+    justify-content: center;
   }
 
   #contact > div {
@@ -507,4 +579,42 @@ footer {
   }
 
   nav > img { display: none;}
+
+    section#works div.worksGrid div.grid1 {
+      position: relative;     
+    }
+    section#works div.worksGrid div.grid1 hr{
+      display: none;
+    }
+    section#works div.worksGrid div.grid1 h1::after{
+      content: "";
+      background-color: #212121;
+      width: 794px;
+      max-width: 50vw;
+      height: 2px;
+      border: none;
+      border-bottom: 1px solid #212121;
+      position: absolute;
+      top: 25px;
+      left: 334px;
+    }
+
+    .noDisplay { display: none;}
+
+    #contact{
+      padding: 130px 9.8vw 154px 9.3vw;
+    }
+
+    #contact > div > p {
+      text-align: justify;
+      margin-right: 2vw;
+    }
+
+    #contact > div > form {
+      padding-top: 0;
+    }
+
+    #contact > div > form > input {
+      width: 47.5vw;
+    }
 }
