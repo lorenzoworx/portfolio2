@@ -144,8 +144,15 @@ footer > div > ul > li { margin-right: 21px; }
   gap: 12px;
 }
 
-.grid2 > div > h1 { padding-top: 12px; }
-.grid2 > div > p { padding-bottom: 12px; }
+.grid2 > div > h1 {
+  padding-top: 12px;
+  margin-bottom: 24px;
+}
+
+.grid2 > div > p {
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+}
 
 .skills > li > ul > li {
   text-align: center;
@@ -277,7 +284,7 @@ button:disabled {
   color: #5b5957;
 }
 
-.grid2 > div > button { margin-top: 15px; }
+.grid2 > div > button { margin-top: 32px; }
 
 #contact {
   display: flex;
@@ -522,6 +529,7 @@ footer {
     background-image: url("img/deskAbout.png");
     background-repeat: no-repeat;
     background-position: 100% 8.3%;
+    padding: 130px 9.7vw;
   }
 
   .aboutMe { width: 39.3vw; }
@@ -529,8 +537,16 @@ footer {
   .skills {
     flex-direction: row;
     gap: 10.5vw;
-    justify-content: center;
+    align-items: flex-start;
+    padding-top: 138px;
+    justify-content: space-between;
   }
+
+  .deskNav > ul > li {
+    display: inline;
+  }
+
+  .skills > li > ul > li { text-align: left; }
 
   #contact > div {
     display: flex;
@@ -555,10 +571,6 @@ footer {
     display: flex;
   }
 
-  .deskNav > ul > li {
-    display: inline;
-  }
-
   .navigationContent > a {
     padding: 10px 0.8vw;
     font-size: 20px;
@@ -581,6 +593,10 @@ footer {
 
   section#works div.worksGrid div.grid1 {
     position: relative;
+  }
+
+  .aboutMe > hr {
+    width: 80.2vw;
   }
 
   section#works div.worksGrid div.grid1 hr {
@@ -617,5 +633,10 @@ footer {
 
   #contact > div > form > input {
     width: 47.5vw;
+  }
+
+  .socialIcons {
+    gap: 1.3vw;
+    justify-content: space-between;
   }
 }
