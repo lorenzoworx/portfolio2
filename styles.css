@@ -354,29 +354,27 @@ footer {
   color: #dfe1e6;
 }
 
- animations
-
-a.logo{
-    animation: rotation 2s 1;
-  
+a.logo {
+  animation: rotation 2s 1;
 }
 
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }  
-
-  .socialIcons ul li a img{
-    transition: all 1s;
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
   }
 
-  .socialIcons ul li a img:hover{
-    transform: scale(1.5);
+  to {
+    transform: rotate(359deg);
   }
+}
+
+.socialIcons ul li a img {
+  transition: all 1s;
+}
+
+.socialIcons ul li a img:hover {
+  transform: scale(1.5);
+}
 
 @media screen and (max-width: 767px) {
   .noMobile { display: none; }
