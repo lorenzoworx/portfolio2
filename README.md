@@ -61,8 +61,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- For a live demo, please follow the link below
+- [Live Demo Link](https://lorenzoworx.github.io/portfolio2/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
