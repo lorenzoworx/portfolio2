@@ -376,7 +376,7 @@ a.logo {
   transform: scale(1.5);
 }
 
-#mobile-nav {
+.mobile-nav {
   position: fixed;
   height: 711px;
   width: 100vw;
@@ -388,21 +388,21 @@ a.logo {
   padding: 24px 24px 0 24px;
 }
 
-#mobile-nav > div {
+.mobile-nav > div {
   padding-bottom: 28px;
   display: flex;
   justify-content: end;
 }
 
-#mobile-nav > ul { list-style: none; }
+.mobile-nav > ul { list-style: none; }
 
-#mobile-nav > ul > li {
+.mobile-nav > ul > li {
   margin-bottom: 24px;
   border-bottom: 1px solid #6f6c6b;
   padding-bottom: 15px;
 }
 
-#mobile-nav > ul > li > a {
+.mobile-nav > ul > li > a {
   text-decoration: none;
   padding-left: 16px;
 }
@@ -695,5 +695,5 @@ a.logo {
     justify-content: space-between;
   }
 
-  #mobile-nav { display: none; }
+  .mobile-nav { display: none; }
 }
