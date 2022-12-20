@@ -154,6 +154,12 @@ footer > div > ul > li { margin-right: 21px; }
   margin-bottom: 24px;
 }
 
+.mobile-nav > ul > li {
+  margin-bottom: 24px;
+  border-bottom: 1px solid #6f6c6b;
+  padding-bottom: 15px;
+}
+
 .skills > li > ul > li {
   text-align: center;
   list-style: none;
@@ -375,6 +381,33 @@ a.logo {
 .socialIcons ul li a img:hover {
   transform: scale(1.5);
 }
+
+.mobile-nav {
+  position: fixed;
+  height: 711px;
+  width: 100vw;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  mix-blend-mode: normal;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  padding: 24px 24px 0 24px;
+}
+
+.mobile-nav > div {
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: end;
+}
+
+.mobile-nav > ul { list-style: none; }
+
+.mobile-nav > ul > li > a {
+  text-decoration: none;
+  padding-left: 16px;
+}
+
+.inactive { display: none; }
 
 @media screen and (max-width: 767px) {
   .noMobile { display: none; }
@@ -661,4 +694,6 @@ a.logo {
     gap: 1.3vw;
     justify-content: space-between;
   }
+
+  .mobile-nav { display: none; }
 }
