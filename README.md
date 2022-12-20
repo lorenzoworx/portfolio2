@@ -99,6 +99,12 @@ Clone this repository to your desired folder:
 - Twitter: [@lorenzoworx](https://twitter.com/lorenzoworx)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/oshoke-okolo-665208108/)
 
+**Author2**
+
+- GitHub: [@lorenzoworx](https://github.com/donmark2k)
+- Twitter: [@lorenzoworx](https://twitter.com/donmark2k)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ochuba-chukwuemeka/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
