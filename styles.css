@@ -154,6 +154,12 @@ footer > div > ul > li { margin-right: 21px; }
   margin-bottom: 24px;
 }
 
+.mobile-nav > ul > li {
+  margin-bottom: 24px;
+  border-bottom: 1px solid #6f6c6b;
+  padding-bottom: 15px;
+}
+
 .skills > li > ul > li {
   text-align: center;
   list-style: none;
@@ -395,12 +401,6 @@ a.logo {
 }
 
 .mobile-nav > ul { list-style: none; }
-
-.mobile-nav > ul > li {
-  margin-bottom: 24px;
-  border-bottom: 1px solid #6f6c6b;
-  padding-bottom: 15px;
-}
 
 .mobile-nav > ul > li > a {
   text-decoration: none;
