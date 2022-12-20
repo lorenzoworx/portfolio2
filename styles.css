@@ -384,17 +384,17 @@ a.logo {
   top: 0;
   left: 0;
   mix-blend-mode: normal;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08); 
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   padding: 24px 24px 0 24px;
 }
 
-#mobile-nav > div { 
+#mobile-nav > div {
   padding-bottom: 28px;
   display: flex;
   justify-content: end;
 }
 
-#mobile-nav > ul {list-style: none; }
+#mobile-nav > ul { list-style: none; }
 
 #mobile-nav > ul > li {
   margin-bottom: 24px;
@@ -402,12 +402,12 @@ a.logo {
   padding-bottom: 15px;
 }
 
-#mobile-nav > ul > li > a { 
-  text-decoration: none; 
+#mobile-nav > ul > li > a {
+  text-decoration: none;
   padding-left: 16px;
 }
 
-.inactive{ display: none;}
+.inactive { display: none; }
 
 @media screen and (max-width: 767px) {
   .noMobile { display: none; }
