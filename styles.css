@@ -38,7 +38,9 @@ button { border: 1px solid; }
 .w400 { font-weight: 400; }
 .w500 { font-weight: 500; }
 .w700 { font-weight: 700; }
+.w600 { font-weight: 600; }
 
+.s13 { font-size: 13px; }
 .s15 { font-size: 15px; }
 .s16 { font-size: 16px; }
 .s17 { font-size: 17px; }
@@ -50,6 +52,7 @@ button { border: 1px solid; }
 .s56 { font-size: 56px; }
 .s72 { font-size: 72px; }
 
+.lh16 { line-height: 16px; }
 .lh20 { line-height: 20px; }
 .lh24 { line-height: 24px; }
 .lh32 { line-height: 32px; }
@@ -290,7 +293,7 @@ button:disabled {
   color: #5b5957;
 }
 
-.grid2 > div > button { margin-top: 32px; }
+.grid2 > div > button { margin-top: 16px; }
 
 #contact {
   display: flex;
@@ -362,6 +365,68 @@ footer {
 
 a.logo {
   animation: rotation 2s 1;
+}
+
+.popSection{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  /* overflow-y: scroll; */
+}
+
+#popup-window {
+  background: #979493;
+  padding-top: 60px;
+  padding-left: 16px;
+  padding-right: 16px;
+  mix-blend-mode: multiply;
+}
+
+#popup {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 16px;
+}
+
+#popup > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#popup > ul {
+  display: flex;
+  list-style: none;
+  margin-top: 50px;
+  margin-bottom: 34px;
+  display: flex;
+  margin-bottom: 24px;
+  gap: 8px;
+}
+
+#popup > ul > li {
+  border: 1px solid #979493;
+  padding: 19px 12px;
+  color: #3C3A39;
+}
+
+#popup > p { 
+  color: #344563;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+#popup > div > button { 
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+  height: 48px;
+}
+
+#popup > div > img {
+  width: 24px;
+  height: 24px;
 }
 
 @keyframes rotation {
