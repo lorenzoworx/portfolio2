@@ -762,3 +762,8 @@ a.logo {
 
   .mobile-nav { display: none; }
 }
+
+#errorMsg {
+  color: red;
+  font-size: 20px;
+}
