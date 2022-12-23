@@ -68,3 +68,77 @@ project2.forEach((project, index) => {
          <button type="button" class="inter w700 s17 lh24 ls048 white bcOrange project2Button showModal">${portfolio[2].buttonText}</button>`
      project.classList.add(portfolio[2].gridClass[index], portfolio[2].divClass)
 })
+
+const popup = document.querySelector(".popSection");
+
+const modalContent = {
+    heading: ['Multi Post Stories', 'Keeping track of hundreds  of components website'],
+    headingClasses: 'roboto s32 nBlue2 w700 lh44',
+    tagClasses: 'poppins w600 s13 lh16',
+    imageLink: ['img/popupbkg.jpg','img/deskPopup.jpg',],
+    paragraphText: [
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    ]
+  }
+  
+  let screenWidth = window.innerWidth;
+  if(screenWidth < 768){
+    popup.innerHTML = `
+    <div id="popup-window">
+    <div id="popup">
+        <div class="popHeader">
+            <h1 class="${modalContent.headingClasses}">${modalContent.heading[0]}</h1>
+            <img src="img/Cancel.png" alt="" class="closeModal">
+        </div>
+        <ul>
+            <li class="${modalContent.tagClasses}" >html</li>
+            <li class="${modalContent.tagClasses}" >Bootstrap</li>
+            <li class="${modalContent.tagClasses}" >Ruby on rails</li>
+        </ul>
+        <div class="popContent">
+            <img src="${modalContent.imageLink[0]}" alt="" class="popupImg">
+            <div>
+                <p class="inter w400 s16 lh24" >${modalContent.paragraphText[0]}</p>
+                <div class="popButtons">
+                    <button class="bcOrange popButton" ><span class="inter w700 s17 lh24 white btnText" >See Live</span> <img src="img/seeLive.png" alt="" class="btnImg"></button>
+                    <button class="bcOrange popButton" ><span class="inter w700 s17 lh24 white btnText" >See Source</span> <img src="img/seeSource.png" alt="" class="btnImg"></button>
+                </div>
+  
+            </div>
+        </div>
+  
+    </div> 
+  </div>   
+    `
+  }
+  else{
+    popup.innerHTML = `
+    <div id="popup-window">
+    <div id="popup">
+        <div class="popHeader">
+            <h1>${modalContent.heading[1]}</h1>
+            <img src="img/Cancel.png" alt="" class="closeModal">
+        </div>
+        <ul>
+            <li>html</li>
+            <li>Bootstrap</li>
+            <li>Ruby on rails</li>
+        </ul>
+        <div class="popContent">
+            <img src="${modalContent.imageLink[1]}" alt="" class="popupImg">
+            <div>
+                <p class="inter w400 s16 lh24" >${modalContent.paragraphText[1]}</p>
+                <div class="popButtons">
+                    <button class="bcOrange popButton" ><span class="inter w700 s17 lh24 white btnText" >See Live</span> <img src="img/seeLive.png" alt="" class="btnImg"></button>
+                    <button class="bcOrange popButton" ><span class="inter w700 s17 lh24 white btnText" >See Source</span> <img src="img/seeSource.png" alt="" class="btnImg"></button>
+                </div>
+  
+            </div>
+        </div>
+  
+    </div> 
+  </div>   
+    `
+  }
+  
