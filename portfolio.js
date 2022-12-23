@@ -1,44 +1,44 @@
 const portfolio = [
-    {
-        gridClass: 'grid1',
-        heading: 'My Recent Works',
-        h1Class:'crete w400 s40 lh52 blackish',
-    },
+  {
+    gridClass: 'grid1',
+    heading: 'My Recent Works',
+    h1Class: 'crete w400 s40 lh52 blackish',
+  },
 
-    {
-        gridClass: 'grid2',
-        imgLink: 'img/projectImg1.jpg',
-        heading: 'Multi-Post Stories',
-        h1Class: "crete w400 s32 lh44 nBlue1",
-        textContent: "A daily selection of privately personlized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever sincr the 1500s, when an unknown printer took a standard dummy text",
-        textClass: "inter w400 s16 lh24 nBue1",
-        ulClass: "techList",
-        tags: ['css','html','bootstrap','Ruby',],
-        tagClass: "project1Tag",
-        buttonText: 'See Project',
-    },
+  {
+    gridClass: 'grid2',
+    imgLink: 'img/projectImg1.jpg',
+    heading: 'Multi-Post Stories',
+    h1Class: 'crete w400 s32 lh44 nBlue1',
+    textContent: "A daily selection of privately personlized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever sincr the 1500s, when an unknown printer took a standard dummy text",
+    textClass: 'inter w400 s16 lh24 nBue1',
+    ulClass: 'techList',
+    tags: ['css', 'html', 'bootstrap', 'Ruby'],
+    tagClass: 'project1Tag',
+    buttonText: 'See Project',
+  },
 
-    {
-        divClass: 'project2',
-        gridClass: ['grid3','grid4','grid5','grid6','grid7','grid8',],
-        heading: 'Professional Art <br> Printing Data',
-        h1Class: "crete w400 s32 lh44 white p16",
-        textContent: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        textClass: "inter w400 s16 lh24 white p16",
-        ulClass: "techlist p16",
-        tags: ['css','html','bootstrap','Ruby',],
-        tagClass: "inter w500 s16 lh20 white project2Tag",
-        buttonText: 'See Project',
-    }
+  {
+    divClass: 'project2',
+    gridClass: ['grid3', 'grid4', 'grid5', 'grid6', 'grid7', 'grid8'],
+    heading: 'Professional Art <br> Printing Data',
+    h1Class: 'crete w400 s32 lh44 white p16',
+    textContent: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    textClass: 'inter w400 s16 lh24 white p16',
+    ulClass: 'techlist p16',
+    tags: ['css', 'html', 'bootstrap', 'Ruby'],
+    tagClass: 'inter w500 s16 lh20 white project2Tag',
+    buttonText: 'See Project',
+  },
 
-]
+];
 
 const worksGrid = Array.from(document.querySelector('.worksGrid').children);
 
 worksGrid[0].innerHTML = `
     <h1 class="${portfolio[0].h1Class}">${portfolio[0].heading}</h1>
-    <hr>`
-worksGrid[0].classList.add(portfolio[0].gridClass)
+    <hr>`;
+worksGrid[0].classList.add(portfolio[0].gridClass);
 
 worksGrid[1].innerHTML = `
 <img src="${portfolio[1].imgLink}" alt="">
@@ -52,12 +52,11 @@ worksGrid[1].innerHTML = `
         <li class="${portfolio[1].tagClass} ruby"><span class="inter w500 s15 lh20 nBlue1">${portfolio[1].tags[3]}</span> </li>
     </ul>
     <button type="button" class="inter w700 s17 lh24 ls048 white bcOrange project1Button showModal">${portfolio[1].buttonText}</button>
-</div>`
+</div>`;
 worksGrid[1].classList.add(portfolio[1].gridClass);
 const project2 = worksGrid.slice(2);
 project2.forEach((project, index) => {
-    console.log(project)
-    project.innerHTML = `
+  project.innerHTML = `
     <h1 class="${portfolio[2].h1Class}">${portfolio[2].heading}</h1>
          <p class="${portfolio[2].textClass}">${portfolio[2].textContent}</p>
          <ul class="${portfolio[2].ulClass}">
@@ -65,26 +64,26 @@ project2.forEach((project, index) => {
              <li class="inter w500 s16 lh20 white project2Tag boot">${portfolio[2].tags[2]}</li>
              <li class="inter w500 s16 lh20 white project2Tag ruby">${portfolio[2].tags[1]}</li>
          </ul>
-         <button type="button" class="inter w700 s17 lh24 ls048 white bcOrange project2Button showModal">${portfolio[2].buttonText}</button>`
-     project.classList.add(portfolio[2].gridClass[index], portfolio[2].divClass)
-})
+         <button type="button" class="inter w700 s17 lh24 ls048 white bcOrange project2Button showModal">${portfolio[2].buttonText}</button>`;
+  project.classList.add(portfolio[2].gridClass[index], portfolio[2].divClass);
+});
 
-const popup = document.querySelector(".popSection");
+const popup = document.querySelector('.popSection');
 
 const modalContent = {
-    heading: ['Multi Post Stories', 'Keeping track of hundreds  of components website'],
-    headingClasses: 'roboto s32 nBlue2 w700 lh44',
-    tagClasses: 'poppins w600 s13 lh16',
-    imageLink: ['img/popupbkg.jpg','img/deskPopup.jpg',],
-    paragraphText: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    ]
-  }
-  
-  let screenWidth = window.innerWidth;
-  if(screenWidth < 768){
-    popup.innerHTML = `
+  heading: ['Multi Post Stories', 'Keeping track of hundreds  of components website'],
+  headingClasses: 'roboto s32 nBlue2 w700 lh44',
+  tagClasses: 'poppins w600 s13 lh16',
+  imageLink: ['img/popupbkg.jpg', 'img/deskPopup.jpg'],
+  paragraphText: [
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+  ],
+};
+
+const screenWidth = window.innerWidth;
+if (screenWidth < 768) {
+  popup.innerHTML = `
     <div id="popup-window">
     <div id="popup">
         <div class="popHeader">
@@ -110,10 +109,9 @@ const modalContent = {
   
     </div> 
   </div>   
-    `
-  }
-  else{
-    popup.innerHTML = `
+    `;
+} else {
+  popup.innerHTML = `
     <div id="popup-window">
     <div id="popup">
         <div class="popHeader">
@@ -139,6 +137,5 @@ const modalContent = {
   
     </div> 
   </div>   
-    `
-  }
-  
+    `;
+}

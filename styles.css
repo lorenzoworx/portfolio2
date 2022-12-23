@@ -301,6 +301,12 @@ button:disabled {
   padding: 120px 24px 124px 24px;
 }
 
+#popup > p {
+  color: #344563;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
 #contact > div > p {
   text-align: center;
 }
@@ -367,7 +373,7 @@ a.logo {
   animation: rotation 2s 1;
 }
 
-.popSection{
+.popSection {
   position: fixed;
   z-index: 10;
   top: 0;
@@ -392,6 +398,14 @@ a.logo {
   padding: 16px;
 }
 
+.mobile-nav > ul { list-style: none; }
+
+.mobile-nav > div {
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: end;
+}
+
 #popup > div {
   display: flex;
   justify-content: space-between;
@@ -402,7 +416,6 @@ a.logo {
   list-style: none;
   margin-top: 50px;
   margin-bottom: 34px;
-  display: flex;
   margin-bottom: 24px;
   gap: 8px;
 }
@@ -410,22 +423,16 @@ a.logo {
 #popup > ul > li {
   border: 1px solid #979493;
   padding: 19px 12px;
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
-#popup > p { 
-  color: #344563;
-  margin-bottom: 16px;
-  margin-top: 24px;
-}
-
-.popButtons{
+.popButtons {
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
 }
 
-.popButton { 
+.popButton {
   padding: 12px;
   display: flex;
   gap: 12px;
@@ -467,14 +474,6 @@ a.logo {
   padding: 24px 24px 0 24px;
 }
 
-.mobile-nav > div {
-  padding-bottom: 28px;
-  display: flex;
-  justify-content: end;
-}
-
-.mobile-nav > ul { list-style: none; }
-
 .mobile-nav > ul > li > a {
   text-decoration: none;
   padding-left: 16px;
@@ -482,14 +481,14 @@ a.logo {
 
 .inactive { display: none; }
 
-.popContent { 
+.popContent {
   flex-direction: column;
   gap: 24px;
   margin-bottom: 16px;
 }
 
-.popButton:hover .btnText { color: #f55800;}
-.popButton:hover .btnImg { filter: invert(39%) sepia(79%) saturate(3767%) hue-rotate(7deg) brightness(102%) contrast(101%);}
+.popButton:hover .btnText { color: #f55800; }
+.popButton:hover .btnImg { filter: invert(39%) sepia(79%) saturate(3767%) hue-rotate(7deg) brightness(102%) contrast(101%); }
 
 @media screen and (max-width: 767px) {
   .noMobile { display: none; }
@@ -581,6 +580,13 @@ a.logo {
   .aboutMe > p {
     font-size: 20px;
     line-height: 32px;
+  }
+
+  .popHeader > h1 {
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
   }
 
   .grid2 > div > h1 {
@@ -759,6 +765,13 @@ a.logo {
     padding: 130px 9.8vw 154px 9.3vw;
   }
 
+  .popContent > div > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
+
   #contact > div > p {
     text-align: justify;
     margin-right: 2vw;
@@ -780,20 +793,13 @@ a.logo {
   .mobile-nav { display: none; }
 
   .popupImg {
-    max-width: 45.7vw;  
+    max-width: 45.7vw;
   }
 
-  #popup {padding: 24px;}
+  #popup { padding: 24px; }
 
   #popup-window {
     padding: 112px 9.8vw;
-  }
-
-  .popHeader > h1 {
-    font-family: 'Crete Round', serif;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
   }
 
   #popup > ul {
@@ -806,8 +812,8 @@ a.logo {
     justify-content: unset;
   }
 
-  .popContent{ 
-    flex-direction: row; 
+  .popContent {
+    flex-direction: row;
     gap: 25px;
   }
 
@@ -815,11 +821,5 @@ a.logo {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-  }
-  .popContent > div > p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    color: #344563;
   }
 }
