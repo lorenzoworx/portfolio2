@@ -129,13 +129,15 @@
                 <p class="inter nBlue2 s32 w700 lh44">I'm always<br>interested in hearing<br>about new projects,<br>so if you'd 
                    like to<br>chat please get in touch.
                 </p>
-                <form action="https://formspree.io/f/xlevqbpl" method="post">
+                <form  id='feedback' action="https://formspree.io/f/xlevqbpl" method="post">
                     <input type="text" id="name" name="user_name" class="formName pholders" maxlength="30" required placeholder="Full name" />
                     <input type="email" id="mail" name="user_email" class="formEmail pholders" placeholder="Email address" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" maxlength="30" required/>                  
                     <textarea id="message" name="user_message" class="formMsg msgpholders" placeholder="Enter text here" cols="30" rows="10" maxlength="500" required></textarea>
+                    <p id="errorMsg" class="inactive">Please enter the email address in Lowercase</p>
+                    <button type="submit" class="bcOrange inter s17 w700 lh24 ls048 white">Get in touch</button>
+
                 </form>                
             </div>
-            <button type="submit" class="bcOrange inter s17 w700 lh24 ls048 white">Get in touch</button>
         </section>
         <section class="popSection inactive">
             <div id="popup-window">

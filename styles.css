@@ -324,7 +324,7 @@ button:disabled {
   margin-top: 24px;
 }
 
-#contact > button {
+#contact > div > form > button {
   margin-top: 24px;
   width: 131px;
   height: 48px;
