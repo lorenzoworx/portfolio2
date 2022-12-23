@@ -54,70 +54,17 @@ worksGrid[1].innerHTML = `
     <button type="button" class="inter w700 s17 lh24 ls048 white bcOrange project1Button showModal">${portfolio[1].buttonText}</button>
 </div>`
 worksGrid[1].classList.add(portfolio[1].gridClass);
-
-worksGrid[2].innerHTML = `
+const project2 = worksGrid.slice(2);
+project2.forEach((project, index) => {
+    console.log(project)
+    project.innerHTML = `
     <h1 class="${portfolio[2].h1Class}">${portfolio[2].heading}</h1>
-    <p class="${portfolio[2].textClass}">${portfolio[2].textContent}</p>
-    <ul class="${portfolio[2].ulClass}">
-        <li class="inter w500 s16 lh20 white project2Tag html">${portfolio[2].tags[1]}</li>
-        <li class="inter w500 s16 lh20 white project2Tag boot">${portfolio[2].tags[2]}</li>
-        <li class="inter w500 s16 lh20 white project2Tag ruby">${portfolio[2].tags[1]}</li>
-    </ul>
-    <button type="button" class="inter w700 s17 lh24 ls048 white bcOrange project2Button showModal">${portfolio[2].buttonText}</button>`
-worksGrid[2].classList.add(portfolio[2].gridClass[0], portfolio[2].divClass)
-
-worksGrid[3].innerHTML = `
-    <h1 class="${portfolio[2].h1Class}">${portfolio[2].heading}</h1>
-    <p class="${portfolio[2].textClass}">${portfolio[2].textContent}</p>
-    <ul class="${portfolio[2].ulClass}">
-        <li class="inter w500 s16 lh20 white project2Tag html">${portfolio[2].tags[1]}</li>
-        <li class="inter w500 s16 lh20 white project2Tag boot">${portfolio[2].tags[2]}</li>
-        <li class="inter w500 s16 lh20 white project2Tag ruby">${portfolio[2].tags[1]}</li>
-    </ul>
-    <button type="button" class="inter w700 s17 lh24 ls048 white bcOrange project2Button showModal">${portfolio[2].buttonText}</button>`
-worksGrid[3].classList.add(portfolio[2].gridClass[1], portfolio[2].divClass)
-
-worksGrid[4].innerHTML = `
-    <h1 class="${portfolio[2].h1Class}">${portfolio[2].heading}</h1>
-    <p class="${portfolio[2].textClass}">${portfolio[2].textContent}</p>
-    <ul class="${portfolio[2].ulClass}">
-        <li class="inter w500 s16 lh20 white project2Tag html">${portfolio[2].tags[1]}</li>
-        <li class="inter w500 s16 lh20 white project2Tag boot">${portfolio[2].tags[2]}</li>
-        <li class="inter w500 s16 lh20 white project2Tag ruby">${portfolio[2].tags[1]}</li>
-    </ul>
-    <button type="button" class="inter w700 s17 lh24 ls048 white bcOrange project2Button showModal">${portfolio[2].buttonText}</button>`
-worksGrid[4].classList.add(portfolio[2].gridClass[2], portfolio[2].divClass)
-
-worksGrid[5].innerHTML = `
-    <h1 class="${portfolio[2].h1Class}">${portfolio[2].heading}</h1>
-    <p class="${portfolio[2].textClass}">${portfolio[2].textContent}</p>
-    <ul class="${portfolio[2].ulClass}">
-        <li class="inter w500 s16 lh20 white project2Tag html">${portfolio[2].tags[1]}</li>
-        <li class="inter w500 s16 lh20 white project2Tag boot">${portfolio[2].tags[2]}</li>
-        <li class="inter w500 s16 lh20 white project2Tag ruby">${portfolio[2].tags[1]}</li>
-    </ul>
-    <button type="button" class="inter w700 s17 lh24 ls048 white bcOrange project2Button showModal">${portfolio[2].buttonText}</button>`
-worksGrid[5].classList.add(portfolio[2].gridClass[3], portfolio[2].divClass)
-
-worksGrid[6].innerHTML = `
-    <h1 class="${portfolio[2].h1Class}">${portfolio[2].heading}</h1>
-    <p class="${portfolio[2].textClass}">${portfolio[2].textContent}</p>
-    <ul class="${portfolio[2].ulClass}">
-        <li class="inter w500 s16 lh20 white project2Tag html">${portfolio[2].tags[1]}</li>
-        <li class="inter w500 s16 lh20 white project2Tag boot">${portfolio[2].tags[2]}</li>
-        <li class="inter w500 s16 lh20 white project2Tag ruby">${portfolio[2].tags[1]}</li>
-    </ul>
-    <button type="button" class="inter w700 s17 lh24 ls048 white bcOrange project2Button showModal">${portfolio[2].buttonText}</button>`
-worksGrid[6].classList.add(portfolio[2].gridClass[4], portfolio[2].divClass)
-
-worksGrid[7].innerHTML = `
-    <h1 class="${portfolio[2].h1Class}">${portfolio[2].heading}</h1>
-    <p class="${portfolio[2].textClass}">${portfolio[2].textContent}</p>
-    <ul class="${portfolio[2].ulClass}">
-        <li class="inter w500 s16 lh20 white project2Tag html">${portfolio[2].tags[1]}</li>
-        <li class="inter w500 s16 lh20 white project2Tag boot">${portfolio[2].tags[2]}</li>
-        <li class="inter w500 s16 lh20 white project2Tag ruby">${portfolio[2].tags[1]}</li>
-    </ul>
-    <button type="button" class="inter w700 s17 lh24 ls048 white bcOrange project2Button showModal">${portfolio[2].buttonText}</button>`
-worksGrid[7].classList.add(portfolio[2].gridClass[5], portfolio[2].divClass)
-
+         <p class="${portfolio[2].textClass}">${portfolio[2].textContent}</p>
+         <ul class="${portfolio[2].ulClass}">
+             <li class="inter w500 s16 lh20 white project2Tag html">${portfolio[2].tags[1]}</li>
+             <li class="inter w500 s16 lh20 white project2Tag boot">${portfolio[2].tags[2]}</li>
+             <li class="inter w500 s16 lh20 white project2Tag ruby">${portfolio[2].tags[1]}</li>
+         </ul>
+         <button type="button" class="inter w700 s17 lh24 ls048 white bcOrange project2Button showModal">${portfolio[2].buttonText}</button>`
+     project.classList.add(portfolio[2].gridClass[index], portfolio[2].divClass)
+})
