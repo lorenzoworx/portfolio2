@@ -372,7 +372,6 @@ a.logo {
   z-index: 10;
   top: 0;
   left: 0;
-  /* overflow-y: scroll; */
 }
 
 #popup-window {
@@ -381,6 +380,7 @@ a.logo {
   padding-left: 16px;
   padding-right: 16px;
   mix-blend-mode: multiply;
+  overflow-y: scroll;
 }
 
 #popup {
