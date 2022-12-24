@@ -5,7 +5,7 @@ const menu = document.querySelector('.mobile-nav');
 
 const showModal = Array.from(document.querySelectorAll('.showModal'));
 const closeModal = document.querySelector('.closeModal');
-const pops = document.querySelector('.popSection');
+const pops = document.querySelector('.popSections');
 
 hamburger.addEventListener('click', () => {
   menu.classList.toggle('inactive');
