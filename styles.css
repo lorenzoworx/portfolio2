@@ -330,7 +330,7 @@ button:disabled {
   margin-top: 24px;
 }
 
-#contact > button {
+#contact > div > form > button {
   margin-top: 24px;
   width: 131px;
   height: 48px;
@@ -841,4 +841,11 @@ a.logo {
     display: inline-block;
     width: 25.6vw;
   }
+}
+
+#errorMsg {
+  color: red;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 8px;
 }
