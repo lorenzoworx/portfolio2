@@ -301,6 +301,12 @@ button:disabled {
   padding: 120px 24px 124px 24px;
 }
 
+#popup > p {
+  color: #344563;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
 #contact > div > p {
   text-align: center;
 }
@@ -367,7 +373,7 @@ a.logo {
   animation: rotation 2s 1;
 }
 
-.popSection{
+.popSection {
   position: fixed;
   z-index: 10;
   top: 0;
@@ -375,12 +381,12 @@ a.logo {
 }
 
 #popup-window {
-  background: #979493;
-  padding-top: 60px;
-  padding-left: 16px;
-  padding-right: 16px;
-  mix-blend-mode: multiply;
-  overflow-y: scroll;
+  z-index: 1;
+  padding: 60px 16px 30px 16px;
+  overflow-y: auto;
+  height: 100%;
+  position: fixed;
+  backdrop-filter: blur(8px);
 }
 
 #popup {
@@ -388,6 +394,14 @@ a.logo {
   flex-direction: column;
   background-color: #fff;
   padding: 16px;
+}
+
+.mobile-nav > ul { list-style: none; }
+
+.mobile-nav > div {
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: end;
 }
 
 #popup > div {
@@ -400,7 +414,6 @@ a.logo {
   list-style: none;
   margin-top: 50px;
   margin-bottom: 34px;
-  display: flex;
   margin-bottom: 24px;
   gap: 8px;
 }
@@ -408,23 +421,23 @@ a.logo {
 #popup > ul > li {
   border: 1px solid #979493;
   padding: 19px 12px;
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
-#popup > p { 
-  color: #344563;
-  margin-bottom: 16px;
-  margin-top: 24px;
+.popButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
 }
 
-#popup > div > button { 
+.popButton {
   padding: 12px;
   display: flex;
   gap: 12px;
   height: 48px;
 }
 
-#popup > div > img {
+.closeModal {
   width: 24px;
   height: 24px;
 }
@@ -459,20 +472,21 @@ a.logo {
   padding: 24px 24px 0 24px;
 }
 
-.mobile-nav > div {
-  padding-bottom: 28px;
-  display: flex;
-  justify-content: end;
-}
-
-.mobile-nav > ul { list-style: none; }
-
 .mobile-nav > ul > li > a {
   text-decoration: none;
   padding-left: 16px;
 }
 
 .inactive { display: none; }
+
+.popContent {
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.popButton:hover .btnText { color: #f55800; }
+.popButton:hover .btnImg { filter: invert(39%) sepia(79%) saturate(3767%) hue-rotate(7deg) brightness(102%) contrast(101%); }
 
 @media screen and (max-width: 767px) {
   .noMobile { display: none; }
@@ -566,6 +580,13 @@ a.logo {
     line-height: 32px;
   }
 
+  .popHeader > h1 {
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
   .grid2 > div > h1 {
     font-size: 40px;
     line-height: 52px;
@@ -608,7 +629,7 @@ a.logo {
     background-repeat: no-repeat;
     background-position: center;
     gap: 24px;
-    padding-top: 200px;
+    padding-top: 156px;
   }
   .grid5 > button { display: none; }
 
@@ -641,7 +662,7 @@ a.logo {
     background-repeat: no-repeat;
     background-position: center;
     gap: 24px;
-    padding-top: 200px;
+    padding-top: 156px;
   }
   .grid8 > button { display: none; }
 
@@ -742,6 +763,17 @@ a.logo {
     padding: 130px 9.8vw 154px 9.3vw;
   }
 
+  .popContent > div > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  .project2:hover p {
+    display: none;
+  }
+
   #contact > div > p {
     text-align: justify;
     margin-right: 2vw;
@@ -761,4 +793,52 @@ a.logo {
   }
 
   .mobile-nav { display: none; }
+
+  .popupImg {
+    max-width: 45.7vw;
+  }
+
+  #popup { padding: 24px; }
+
+  #popup-window {
+    padding: 112px 9.8vw;
+  }
+
+  .project2:hover ul {
+    display: none;
+  }
+
+  #popup > ul {
+    margin-top: 12px;
+    margin-bottom: 40px;
+  }
+
+  .popButtons {
+    gap: 7px;
+    justify-content: unset;
+  }
+
+  .popContent {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  #popup > ul > li {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .project2:hover {
+    justify-content: end;
+  }
+
+  .project2:hover h1 {
+    display: none;
+  }
+
+  .project2:hover .project2Button {
+    display: inline-block;
+    width: 25.6vw;
+  }
 }
