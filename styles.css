@@ -378,17 +378,16 @@ a.logo {
   z-index: 10;
   top: 0;
   left: 0;
+  
 }
 
 #popup-window {
   z-index: 1;
-  background: #979493;
-  padding-top: 60px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 60px 16px 30px 16px;
   overflow-y: auto;
   height: 100%;
   position: fixed;
+  backdrop-filter: blur(8px);
 }
 
 #popup {
