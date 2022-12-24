@@ -38,7 +38,9 @@ button { border: 1px solid; }
 .w400 { font-weight: 400; }
 .w500 { font-weight: 500; }
 .w700 { font-weight: 700; }
+.w600 { font-weight: 600; }
 
+.s13 { font-size: 13px; }
 .s15 { font-size: 15px; }
 .s16 { font-size: 16px; }
 .s17 { font-size: 17px; }
@@ -50,6 +52,7 @@ button { border: 1px solid; }
 .s56 { font-size: 56px; }
 .s72 { font-size: 72px; }
 
+.lh16 { line-height: 16px; }
 .lh20 { line-height: 20px; }
 .lh24 { line-height: 24px; }
 .lh32 { line-height: 32px; }
@@ -290,12 +293,18 @@ button:disabled {
   color: #5b5957;
 }
 
-.grid2 > div > button { margin-top: 32px; }
+.grid2 > div > button { margin-top: 16px; }
 
 #contact {
   display: flex;
   flex-direction: column;
   padding: 120px 24px 124px 24px;
+}
+
+#popup > p {
+  color: #344563;
+  margin-bottom: 16px;
+  margin-top: 24px;
 }
 
 #contact > div > p {
@@ -364,6 +373,75 @@ a.logo {
   animation: rotation 2s 1;
 }
 
+.popSection {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+#popup-window {
+  z-index: 1;
+  padding: 60px 16px 30px 16px;
+  overflow-y: auto;
+  height: 100%;
+  position: fixed;
+  backdrop-filter: blur(8px);
+}
+
+#popup {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 16px;
+}
+
+.mobile-nav > ul { list-style: none; }
+
+.mobile-nav > div {
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: end;
+}
+
+#popup > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#popup > ul {
+  display: flex;
+  list-style: none;
+  margin-top: 50px;
+  margin-bottom: 34px;
+  margin-bottom: 24px;
+  gap: 8px;
+}
+
+#popup > ul > li {
+  border: 1px solid #979493;
+  padding: 19px 12px;
+  color: #3c3a39;
+}
+
+.popButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.popButton {
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+  height: 48px;
+}
+
+.closeModal {
+  width: 24px;
+  height: 24px;
+}
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -394,20 +472,21 @@ a.logo {
   padding: 24px 24px 0 24px;
 }
 
-.mobile-nav > div {
-  padding-bottom: 28px;
-  display: flex;
-  justify-content: end;
-}
-
-.mobile-nav > ul { list-style: none; }
-
 .mobile-nav > ul > li > a {
   text-decoration: none;
   padding-left: 16px;
 }
 
 .inactive { display: none; }
+
+.popContent {
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.popButton:hover .btnText { color: #f55800; }
+.popButton:hover .btnImg { filter: invert(39%) sepia(79%) saturate(3767%) hue-rotate(7deg) brightness(102%) contrast(101%); }
 
 @media screen and (max-width: 767px) {
   .noMobile { display: none; }
@@ -501,6 +580,13 @@ a.logo {
     line-height: 32px;
   }
 
+  .popHeader > h1 {
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
   .grid2 > div > h1 {
     font-size: 40px;
     line-height: 52px;
@@ -543,7 +629,7 @@ a.logo {
     background-repeat: no-repeat;
     background-position: center;
     gap: 24px;
-    padding-top: 200px;
+    padding-top: 156px;
   }
   .grid5 > button { display: none; }
 
@@ -576,7 +662,7 @@ a.logo {
     background-repeat: no-repeat;
     background-position: center;
     gap: 24px;
-    padding-top: 200px;
+    padding-top: 156px;
   }
   .grid8 > button { display: none; }
 
@@ -677,6 +763,17 @@ a.logo {
     padding: 130px 9.8vw 154px 9.3vw;
   }
 
+  .popContent > div > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  .project2:hover p {
+    display: none;
+  }
+
   #contact > div > p {
     text-align: justify;
     margin-right: 2vw;
@@ -696,4 +793,52 @@ a.logo {
   }
 
   .mobile-nav { display: none; }
+
+  .popupImg {
+    max-width: 45.7vw;
+  }
+
+  #popup { padding: 24px; }
+
+  #popup-window {
+    padding: 112px 9.8vw;
+  }
+
+  .project2:hover ul {
+    display: none;
+  }
+
+  #popup > ul {
+    margin-top: 12px;
+    margin-bottom: 40px;
+  }
+
+  .popButtons {
+    gap: 7px;
+    justify-content: unset;
+  }
+
+  .popContent {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  #popup > ul > li {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .project2:hover {
+    justify-content: end;
+  }
+
+  .project2:hover h1 {
+    display: none;
+  }
+
+  .project2:hover .project2Button {
+    display: inline-block;
+    width: 25.6vw;
+  }
 }
