@@ -488,11 +488,6 @@ a.logo {
 .popButton:hover .btnText { color: #f55800; }
 .popButton:hover .btnImg { filter: invert(39%) sepia(79%) saturate(3767%) hue-rotate(7deg) brightness(102%) contrast(101%); }
 
-#errorMsg {
-  border: 1px solid red;
-  border-radius: 5px;
-}
-
 @media screen and (max-width: 767px) {
   .noMobile { display: none; }
 }
