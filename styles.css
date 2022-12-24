@@ -847,3 +847,10 @@ a.logo {
     width: 25.6vw;
   }
 }
+
+#errorMsg {
+  color: red;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 8px;
+}
