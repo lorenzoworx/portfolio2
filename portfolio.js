@@ -64,7 +64,7 @@ project2.forEach((project, index) => {
              <li class="inter w500 s16 lh20 white project2Tag boot">${portfolio[2].tags[2]}</li>
              <li class="inter w500 s16 lh20 white project2Tag ruby">${portfolio[2].tags[1]}</li>
          </ul>
-         <button type="button" class="inter w700 s17 lh24 ls048 white bcOrange project2Button showModal">${portfolio[2].buttonText}</button>`;
+         <button type="button" class="inter w700 s17 lh24 ls048 white bcOrange project2Button showModal" id="btnHover">${portfolio[2].buttonText}</button>`;
   project.classList.add(portfolio[2].gridClass[index], portfolio[2].divClass);
 });
 
