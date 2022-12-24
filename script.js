@@ -30,13 +30,13 @@ showModal.forEach((item) => {
 closeModal.addEventListener('click', () => {
   pops.classList.toggle('inactive');
 });
-const feedbackForm = document.getElementById("feedback");
-const mail =  document.getElementById('mail');
-feedbackForm.addEventListener("submit", (e) => {
+const feedbackForm = document.getElementById('feedback');
+const mail = document.getElementById('mail');
+feedbackForm.addEventListener('submit', (e) => {
   e.preventDefault();
   if (mail.value.toLowerCase() !== mail.value) {
-    document.getElementById('errorMsg').classList.toggle("inactive");
-  }else{
+    document.getElementById('errorMsg').classList.toggle('inactive');
+  } else {
     feedbackForm.submit();
   }
 });
