@@ -7,7 +7,7 @@ const portfolio = [
 
   {
     gridClass: 'grid2',
-    imgLink: 'img/projectImg1.jpg',
+    imgLink: 'img/todoList.png',
     heading: 'Multi-Post Stories',
     h1Class: 'crete w400 s32 lh44 nBlue1',
     textContent: "A daily selection of privately personlized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever sincr the 1500s, when an unknown printer took a standard dummy text",
@@ -51,7 +51,7 @@ worksGrid[1].innerHTML = `
         <li class="${portfolio[1].tagClass} boot"><span class="inter w500 s15 lh20 nBlue1">${portfolio[1].tags[2]}</span></li>
         <li class="${portfolio[1].tagClass} ruby"><span class="inter w500 s15 lh20 nBlue1">${portfolio[1].tags[3]}</span> </li>
     </ul>
-    <button type="button" class="inter w700 s17 lh24 ls048 white bcOrange project1Button showModal">${portfolio[1].buttonText}</button>
+    <button onclick = "window.location.href='https://github.com/lorenzoworx/to-do-list';" type="button" class="inter w700 s17 lh24 ls048 white bcOrange project1Button showModal">${portfolio[1].buttonText}</button>
 </div>`;
 worksGrid[1].classList.add(portfolio[1].gridClass);
 const project2 = worksGrid.slice(2);
